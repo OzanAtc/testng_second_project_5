@@ -4,7 +4,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import utilities.Waiter;
 
-import java.awt.*;
 
 public class Airline_BaseTest extends Airline_Base {
 

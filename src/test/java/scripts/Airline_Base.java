@@ -21,6 +21,7 @@ public class Airline_Base {
         driver.get(ConfigProperties.getProperty("appURL"));
 
         airline_basePage = new Airline_BasePage();
+        airline_flight_informationPage = new Airline_Flight_InformationPage();
     }
 
     @AfterMethod

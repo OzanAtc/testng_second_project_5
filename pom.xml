@@ -39,7 +39,6 @@
 
     </dependencies>
 
-
     <profiles>
     <profile>
         <id>Regression</id>

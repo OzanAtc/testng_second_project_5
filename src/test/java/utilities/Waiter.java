@@ -2,7 +2,6 @@ package utilities;
 
 public class Waiter {
 
-
     public static void pause(int seconds) {
 
         try {

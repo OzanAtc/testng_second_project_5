@@ -5,7 +5,6 @@ import java.util.Properties;
 
 public class ConfigProperties {
 
-
     private static Properties properties = new Properties();
 
     static {

@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
+import utilities.Waiter;
 
 import java.util.List;
 
@@ -53,7 +54,25 @@ public class Airline_BasePage {
     @FindBy(css = "button[aria-label='Find flights']")
     public WebElement findFlights_Button;
 
+    public void login() {
 
+        roundTripAndOneWayLabels.get(1).click();
+        from_and_to_InputBox.get(0).clear();
+        from_and_to_InputBox.get(0).sendKeys("Chicago, IL, US (ORD)");
+        from_and_to_InputBox.get(1).clear();
+        Waiter.pause(2);
+        from_and_to_InputBox.get(1).sendKeys("Miami, FL, US (MIA)");
+        datesFor_InputBox.click();
+        datesFor_InputBox.clear();
+        datesFor_InputBox.sendKeys("Feb 28");
+        travelerSelector.click();
+        adultTraveler_Add_More_Button.click();
+        cabinType_InputBox.click();
+        cabinType_Dropdown_Options.get(2).click();
+        Waiter.pause(5);
+        findFlights_Button.click();
+
+    }
 
 
 }
